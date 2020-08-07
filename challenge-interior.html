@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Menu Bar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/in-style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <div class="topbar">
+        <div class="logo"><span id="logo">THIS INTERIOR</span></div>
+        <button class="btn btn-toggle" onClick="toggleMenu();"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="collapse" id="collapse-menu">
+        <button class="btn btn-toggle" onClick="toggleMenu();"><i class="fas fa-times"></i></button>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="mainContainer">
+        <div class="left-side">
+          <h1>Modern interior</h1>
+          <p class="content">
+            A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+          </p>
+          <button class="btn btn-more">Read more&nbsp;&#8594;</button>
+        </div>
+        <div class="visual">
+          <img src="img/in-photo1.png" alt="interior photo" />
+          <div class="namecard">
+            <div class="card-top">
+              <div class="profilePic"><img src="img/in-photo2.png" alt="designer profile" /></div>
+              <div class="nameAndJob">
+                <span class="name">Aliza Webber</span>
+                <span class="job">Interior designer</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Designed in 2020 by <br />Aliza Webber</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><span>King Fung@DevChallenges.io</span></footer>
+  </body>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("collapse-menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</html>
