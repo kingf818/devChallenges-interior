@@ -181,6 +181,7 @@ footer span {
   padding-bottom: 1rem;
 }
 /*/////////////desktop responsive/////////////////*/
+
 @media only screen and (min-width: 768px) {
   body {
     display: flex;
@@ -232,18 +233,34 @@ footer span {
   }
   main h1 {
     font-size: 3rem;
+    margin: 0;
   }
   main .left-side {
-    width: 50%;
-    min-width: 50%;
+    width: 40%;
+    min-width: 40%;
   }
   main .content {
-    width: 60%;
+    width: 80%;
     font-size: 1.5rem;
   }
   nav .topbar .logo .namecard {
     width: 60%;
 
     left: 150px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  main h1 {
+    margin: 30px 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main .left-side {
+    width: 50%;
+    min-width: 50%;
+  }
+  main .content {
+    width: 60%;
   }
 }
